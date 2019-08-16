@@ -1,0 +1,80 @@
+﻿<UserControl
+    x:Class="_2dControls.SequenceStatus"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_2dControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="20"
+    d:DesignWidth="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border x:Name="bt0" CornerRadius="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlHighlightChromeAltLowBrush}">
+            <Border x:Name="ibt0" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" />
+        </Border>
+        <Border x:Name="bt1" CornerRadius="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlHighlightChromeAltLowBrush}">
+            <Border x:Name="ibt1" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt2" CornerRadius="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlHighlightChromeAltLowBrush}">
+            <Border x:Name="ibt2" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt3" CornerRadius="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlHighlightChromeAltLowBrush}">
+            <Border x:Name="ibt3" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt4" CornerRadius="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlHighlightChromeAltLowBrush}">
+            <Border x:Name="ibt4" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt5" CornerRadius="1" Grid.Column="5" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlHighlightChromeAltLowBrush}">
+            <Border x:Name="ibt5" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt6" CornerRadius="1" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlHighlightChromeAltLowBrush}">
+            <Border x:Name="ibt6" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt7" CornerRadius="1" Grid.Column="7" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlHighlightChromeAltLowBrush}">
+            <Border x:Name="ibt7" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt8" CornerRadius="1" Grid.Column="8" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlForegroundChromeDisabledLowBrush}">
+            <Border x:Name="ibt8" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt9" CornerRadius="1" Grid.Column="9" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlForegroundChromeDisabledLowBrush}">
+            <Border x:Name="ibt9" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt10" CornerRadius="1" Grid.Column="10" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlForegroundChromeDisabledLowBrush}">
+            <Border x:Name="ibt10" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt11" CornerRadius="1" Grid.Column="11" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlForegroundChromeDisabledLowBrush}">
+            <Border x:Name="ibt11" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt12" CornerRadius="1" Grid.Column="12" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlForegroundChromeDisabledLowBrush}">
+            <Border x:Name="ibt12" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt13" CornerRadius="1" Grid.Column="13" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlForegroundChromeDisabledLowBrush}">
+            <Border x:Name="ibt13" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt14" CornerRadius="1" Grid.Column="14" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlForegroundChromeDisabledLowBrush}">
+            <Border x:Name="ibt14" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+        <Border x:Name="bt15" CornerRadius="1" Grid.Column="15" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="10" Margin="2" Background="{StaticResource SystemControlForegroundChromeDisabledLowBrush}">
+            <Border x:Name="ibt15" CornerRadius="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{StaticResource SystemControlHighlightListAccentHighBrush}" Margin="2" Opacity="0" />
+        </Border>
+    </Grid>
+</UserControl>

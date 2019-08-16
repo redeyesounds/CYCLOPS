@@ -1,0 +1,68 @@
+﻿<UserControl
+    x:Class="_2dControls.ScaleSelector"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_2dControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:gaze="using:Microsoft.Toolkit.Uwp.Input.GazeInteraction"
+    mc:Ignorable="d"
+    d:DesignHeight="1000"
+    d:DesignWidth="1000">
+
+    <UserControl.Resources>
+        <Style x:Key="CircleButton" TargetType="Button">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="{TemplateBinding Background}"></Ellipse>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <controls:OrbitView OrbitsEnabled="False" AnchorsEnabled="False" IsItemClickEnabled="True" MinItemSize="70" MaxItemSize="90" AnchorColor="Gray" OrbitColor="Gray" >
+            <controls:OrbitView.ItemTemplate>
+                <DataTemplate x:DataType="controls:OrbitViewDataItem">
+                    <Button Click="Button_Click" FontSize="18" FontWeight="Bold" Content="{x:Bind Label, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource CircleButton}" Loaded="Button_Loaded">
+                        <gaze:GazeInput.GazeElement>
+                            <gaze:GazeElement DwellProgressFeedback="GazeElement_DwellProgressFeedback" StateChanged="GazeElement_StateChanged" />
+                        </gaze:GazeInput.GazeElement>
+                    </Button>
+                </DataTemplate>
+            </controls:OrbitView.ItemTemplate>
+            <controls:OrbitView.ItemsSource>
+                <controls:OrbitViewDataItemCollection>
+                    <controls:OrbitViewDataItem x:Name="s2" Distance="0.6" Diameter="0.9" Label="3" />
+                    <controls:OrbitViewDataItem x:Name="s1" Distance="0.6" Diameter="0.9" Label="2" />
+                    <controls:OrbitViewDataItem x:Name="s0" Distance="0.6" Diameter="0.9" Label="1" />
+                    <controls:OrbitViewDataItem x:Name="s11" Distance="0.6" Diameter="0.9" Label="12" />
+                    <controls:OrbitViewDataItem x:Name="s10" Distance="0.6" Diameter="0.9" Label="11" />
+                    <controls:OrbitViewDataItem x:Name="s9" Distance="0.6" Diameter="0.9" Label="10" />
+                    <controls:OrbitViewDataItem x:Name="s8" Distance="0.6" Diameter="0.9" Label="9" />
+                    <controls:OrbitViewDataItem x:Name="s7" Distance="0.6" Diameter="0.9" Label="8" />
+                    <controls:OrbitViewDataItem x:Name="s6" Distance="0.6" Diameter="0.9" Label="7" />
+                    <controls:OrbitViewDataItem x:Name="s5" Distance="0.6" Diameter="0.9" Label="6" />
+                    <controls:OrbitViewDataItem x:Name="s4" Distance="0.6" Diameter="0.9" Label="5" />
+                    <controls:OrbitViewDataItem x:Name="s3" Distance="0.6" Diameter="0.9" Label="4" />
+                </controls:OrbitViewDataItemCollection>
+            </controls:OrbitView.ItemsSource>
+            <controls:OrbitView.CenterContent>
+                <Grid>
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock Text="SELECT A KEY" Style="{StaticResource SubheaderTextBlockStyle}" />
+                        <ToggleSwitch x:Name="scaleToggle" OnContent="minor" OffContent="Major" Header="Scale" HorizontalAlignment="Center" Margin="10" Toggled="ScaleToggle_Toggled" />
+                    </StackPanel>
+                </Grid>
+            </controls:OrbitView.CenterContent>
+
+        </controls:OrbitView>
+    </Grid>
+
+</UserControl>
